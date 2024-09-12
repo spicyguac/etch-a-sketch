@@ -1,6 +1,15 @@
 const container = document.querySelector("div");
 
-for(i = 0; i < 16; i++){
+let numberOfSquares = 0;
+
+const userInput = document.querySelector("#getSquares");
+
+userInput.addEventListener("click", () => {
+    numberOfSquares = prompt("How Many Squares Do You Want In Your Grid");
+    numberOfSquares = +numberOfSquares;
+})
+
+for(i = 0; i < userinput; i++){
     let gridPiece = document.createElement("div");
     gridPiece.classList.add("gridPiece");
     container.appendChild(gridPiece);
