@@ -7,6 +7,7 @@ const userInput = document.querySelector("#getSquares");
 userInput.addEventListener("click", () => {
     numberOfSquares = prompt("How Many Squares Do You Want In Your Grid");
     numberOfSquares = +numberOfSquares;
+    container.textContent = '';
     createGrid(numberOfSquares);
 })
 
